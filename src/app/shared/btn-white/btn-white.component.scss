@@ -1,0 +1,31 @@
+@import '../../../styles.scss';
+
+button {
+  height: 2.5rem;
+  min-width: 8rem;
+  width: max-content;
+  white-space: nowrap;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 1px;
+  cursor: pointer;
+
+  span {
+    @extend %flex;
+    height: 100%;
+    border-radius: 2rem;
+    background: $black-russian;
+    padding: 0 1rem;
+  }
+
+  &:hover {
+    background: $linear-btn;
+
+    p {
+      color: transparent;
+      background: $linear-btn;
+      background-clip: text;
+    }
+  }
+}

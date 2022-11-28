@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-btn-color',
+  selector: 'btn-color',
   templateUrl: './btn-color.component.html',
   styleUrls: ['./btn-color.component.scss']
 })

@@ -1,0 +1,15 @@
+@import "../styles.scss";
+
+div {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 4.5rem);
+  background: $black-russian;
+
+  h1 {
+    color: transparent;
+    background: $linear-btn;
+    background-clip: text;
+    font-size: 10vw;
+  }
+}

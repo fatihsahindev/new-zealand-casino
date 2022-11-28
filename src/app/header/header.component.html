@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div class="row">
+  <nav class="col-8">
+
+    <!-- Logo -->
+    <a href="https://falovic.github.io/new-zealand-casino/"><img src="../../assets/svg/logo.svg"></a>
+
+    <!-- Buttons -->
+    <div class="row">
+      <btn-white>ONLINE CASINO</btn-white>
+      <select>
+        <ng-container *ngFor="let casino of casinos">
+          <option>{{casino}}</option>
+        </ng-container>
+      </select>
+      <a href="">New Danish Casinos</a>
+      <a href="">Payment Methods</a>
+      <btn-color>SIGN UP NOW</btn-color>
+    </div>
+  </nav>
+</div>

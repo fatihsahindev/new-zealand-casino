@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
 // Color
 $lavender: #DDDFFF;
 $biloba-flower: #B588FF;
@@ -5,7 +7,62 @@ $dodger-blue: #35A6FC;
 $electric-blue: #81FDF7;
 $black-russian: #07041C;
 $jagger: #422E53;
-$white: #FFFFFF;
 $white-glass: rgba(255, 255, 255, 0.3);
 $linear-btn: linear-gradient(237.12deg, #FFCEA8 0%, #C3A6FC 50.52%, #80FEF7 100%);
 $linear-bg: linear-gradient(180deg, #14102B 0%, #282349 100%);
+
+// Variable
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Grid
+.row {
+  @extend %flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  display: flex;
+}
+
+// Desktop
+.col-1 {width: calc(100vw / 12);}
+.col-2 {width: calc(100vw / 12 * 2);}
+.col-3 {width: calc(100vw / 12 * 3);}
+.col-4 {width: calc(100vw / 12 * 4);}
+.col-5 {width: calc(100vw / 12 * 5);}
+.col-6 {width: calc(100vw / 12 * 6);}
+.col-7 {width: calc(100vw / 12 * 7);}
+.col-8 {width: calc(100vw / 12 * 8);}
+.col-9 {width: calc(100vw / 12 * 9);}
+.col-10 {width: calc(100vw / 12 * 10);}
+.col-11 {width: calc(100vw / 12 * 11);}
+.col-12 {width: calc(100vw);}
+
+// Mobile
+@media only screen and (max-width: 992px) {
+
+  [class*="col-"] {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Reboot
+* {
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s all;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
