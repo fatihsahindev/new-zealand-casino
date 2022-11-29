@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { BtnWhiteComponent } from './shared/btn-white/btn-white.component';
 import { BtnColorComponent } from './shared/btn-color/btn-color.component';
 import { CasinoComponent } from './shared/casino/casino.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CasinoComponent } from './shared/casino/casino.component';
     BtnWhiteComponent,
     BtnColorComponent,
     CasinoComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
