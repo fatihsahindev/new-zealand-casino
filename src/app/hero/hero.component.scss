@@ -1,0 +1,22 @@
+@import '../../styles.scss';
+
+.container {
+  @include cont(auto, $black-russian);
+}
+
+section {
+  @include page($linear-bg);
+  padding: 0 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  .content {
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+}

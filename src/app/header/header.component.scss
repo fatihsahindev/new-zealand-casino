@@ -6,15 +6,11 @@
 }
 
 .container {
-  @extend %flex;
-  width: 100%;
-  height: 4.5rem;
-  background-color: $black-russian;
+  @include cont(4.5rem, $black-russian);
 }
 
 nav {
-  @extend %flex;
-  width: $width;
+  @include page(inherit);
   justify-content: space-between;
 
   div {

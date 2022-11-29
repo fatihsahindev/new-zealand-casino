@@ -20,7 +20,22 @@ $linear-bg: linear-gradient(180deg, #14102B 0%, #282349 100%);
   align-items: center;
 }
 
-$width: calc(100vw * 0.7);
+$wdt-cont: 100%;
+$wdt-page: calc($wdt-cont * 0.7);
+
+@mixin cont($hg, $bg) {
+  @extend %flex;
+  width: $wdt-cont;
+  height: $hg;
+  background: $bg;
+}
+
+@mixin page($bg) {
+  @extend %flex;
+  width: $wdt-page;
+  background: $bg;
+  color: #fff;
+}
 
 // Reboot
 * {
