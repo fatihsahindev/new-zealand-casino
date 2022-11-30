@@ -1,31 +1,21 @@
 @import '../../../styles.scss';
 
 button {
-  height: 2.5rem;
-  min-width: 8rem;
   width: max-content;
-  white-space: nowrap;
-  color: white;
+  min-width: 8rem;
+  height: 2rem;
+  padding: 0 1rem;
   font-size: 1rem;
+  color: white;
+  background: transparent;
+  box-shadow: -1px 1px 0 0 white, 1px -1px 0 0 white, 0 0 0 1px white;
+  border: none;
   border-radius: 2rem;
-  padding: 1px;
   cursor: pointer;
 
-  span {
-    @extend %flex;
-    height: 100%;
-    border-radius: 2rem;
-    background: $black-russian;
-    padding: 0 1rem;
-  }
-
   &:hover {
-    background: $linear-btn;
-
-    p {
-      color: transparent;
-      background: $linear-btn;
-      background-clip: text;
-    }
+    border-color: transparent;
+    box-shadow: 0 0 2rem 1px #C3A6FC;
+    text-shadow: -1rem 0 1rem #c3a6fc, 1rem 0 1rem #c3a6fc;
   }
 }
