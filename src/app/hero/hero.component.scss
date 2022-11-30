@@ -1,10 +1,13 @@
 @import '../../styles.scss';
 
+// Container
 .container {
   @include cont(auto, $black-russian);
+  flex-direction: column
 }
 
-section {
+// Hero 1
+.hero1 {
   @include page($linear-bg);
   padding: 0 2rem;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -12,11 +15,39 @@ section {
   .content {
     display: inherit;
     flex-direction: column;
-    gap: 1rem;
-  }
+    gap: 2rem;
 
-  h1 {
-    font-size: 40px;
-    font-weight: normal;
+    .ref {
+      display: inherit;
+      gap: 1rem;
+
+      span {
+        border: 1px solid $lavender;
+        border-radius: 1rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+// Hero 2
+.hero2 {
+  @include page($black-russian);
+  justify-content: space-around;
+  padding: 2rem;
+
+  .content {
+    display: inherit;
+    flex-direction: column;
+    gap: 2rem;
+
+    .coin {
+      display: inherit;
+      gap: 1rem;
+
+      img:hover {
+        filter: sepia();
+      }
+    }
   }
 }

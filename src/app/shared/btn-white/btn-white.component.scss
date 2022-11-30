@@ -2,7 +2,6 @@
 
 button {
   width: max-content;
-  min-width: 8rem;
   height: 2rem;
   padding: 0 1rem;
   font-size: 1rem;
@@ -10,7 +9,7 @@ button {
   background: transparent;
   box-shadow: -1px 1px 0 0 white, 1px -1px 0 0 white, 0 0 0 1px white;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
 
   &:hover {
