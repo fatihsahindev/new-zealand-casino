@@ -2,16 +2,21 @@
 
 // Color
 $lavender: #DDDFFF;
+$pale-violet: #C3A6FC;
 $biloba-flower: #B588FF;
 $dodger-blue: #35A6FC;
 $electric-blue: #81FDF7;
 $slime-girl: #00BB83;
 $lilac-lotion: #FD387F;
+$deep-peach: #FFCEA8;
 $black-russian: #07041C;
+$eerie-black: #14102B;
+$space-cadet: #282349;
 $jagger: #422E53;
 $white-glass: rgba(255, 255, 255, 0.3);
-$linear-btn: linear-gradient(237.12deg, #FFCEA8 0%, #C3A6FC 50.52%, #80FEF7 100%);
-$linear-bg: linear-gradient(180deg, #14102B 0%, #282349 100%);
+$linear-btn: linear-gradient(237.12deg, $deep-peach 0%, $pale-violet 50.52%, $electric-blue 100%);
+$linear-bg: linear-gradient(180deg, $eerie-black 0%, $space-cadet 100%);
+$hero-bg: linear-gradient(180deg, transparent 10%, $space-cadet 100%);
 
 // Variable
 %flex {

@@ -8,7 +8,7 @@
 
 // Hero 1
 .hero1 {
-  @include page($linear-bg);
+  @include page($hero-bg);
   padding: 0 2rem;
   border-radius: 0 0 0.5rem 0.5rem;
 
@@ -35,6 +35,10 @@
   @include page($black-russian);
   justify-content: space-around;
   padding: 2rem;
+
+  img {
+    filter: drop-shadow(40vw 0 6rem $biloba-flower);
+  }
 
   .content {
     display: inherit;
