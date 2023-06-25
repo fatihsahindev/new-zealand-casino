@@ -1,3 +1,3 @@
 # New Zealand Casino
 
-- [Live Demo](https://falovic.github.io/new-zealand-casino)
+- [Live Demo](https://fatihsahindev.github.io/new-zealand-casino)
